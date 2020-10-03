@@ -1,5 +1,5 @@
 var idToShortURL = function (id) {
- 
+
   map = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   shortURL = "";
 
@@ -16,7 +16,7 @@ var idToShortURL = function (id) {
       id = id * 62 + val_i - "a".charCodeAt(0);
       // console.log(id);
     } else if (val_i >= "A".charCodeAt(0) && val_i <= "Z".charCodeAt(0)) {
-       console.log(id)
+      console.log(id)
       id = id * 62 + val_i - "A".charCodeAt(0) + 26;
       console.log(id);
     } else id = id * 62 + val_i - "0".charCodeAt(0) + 52;
@@ -25,3 +25,6 @@ var idToShortURL = function (id) {
 };
 
 console.log(idToShortURL(150));
+
+//o(n)
+//o(1)

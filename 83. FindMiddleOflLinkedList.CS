@@ -58,3 +58,5 @@ public static void main(String[] args)
     } 
 } 
 }
+//o(n)
+//o(1)
