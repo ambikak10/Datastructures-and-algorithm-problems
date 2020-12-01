@@ -1,4 +1,6 @@
 //Reverse linked list using recursion
+// o(2n)
+//o(1) space
 class Node {
   constructor(value) {
     this.value = value;
@@ -11,7 +13,6 @@ class LinkedList {
     this.tail = null;
     this.lengths = 0;
   }
-
   // Add a node to the end of the linked list
   pushNode(val) {
     const newNode = new Node(val);
@@ -25,8 +26,9 @@ class LinkedList {
     this.lengths++;
     return newNode;
   }
+  
   reversedList(head){
-    var stack = [];
+    //var stack = [];
     if (head === null || head.next === null) {
       return head;
     }

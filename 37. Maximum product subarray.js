@@ -53,9 +53,10 @@ var maxProduct = function (nums) {
 
     res = Math.max(_res, _tmp, 1);
     tmp = Math.min(_res, _tmp, 1);
+    console.log(ans, _res, _tmp, res, tmp)
   });
 
   return ans;
 };
-console.log(maxProduct([-2, 0, -1 ]));
+console.log(maxProduct([-2, -3, -1 ]));
 // Time complexity : O(n)

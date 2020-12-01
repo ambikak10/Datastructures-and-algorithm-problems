@@ -32,7 +32,6 @@ var spiral = function (a, n, m) {
   }
   return a;
 };
-
 var matrix = [
   [1, 2, 3],
   [5, 6, 7],

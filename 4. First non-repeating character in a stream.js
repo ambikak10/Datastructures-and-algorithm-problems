@@ -7,7 +7,7 @@ class Node {
     this.next = null;
   }
 }
-class DoublyLinkedList {
+class DoublyLinkedList { 
   constructor() {
     this.head = null;
     this.tail = null;

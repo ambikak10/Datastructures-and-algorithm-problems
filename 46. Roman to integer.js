@@ -7,7 +7,6 @@ var romanToInt = function(s) {
     a.V = 5;
     a.C = 100;
     a.L = 50;
-    
     sum = 0;
     for(var i=0; i < s.length; i++){
         var item = a[s[i]];

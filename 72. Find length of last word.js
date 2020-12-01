@@ -3,13 +3,13 @@
 
 var lastWordLength = function (s) {
   s = s.trim();
-  var str = s.replace(/\s/g, '');
+  var str = s.replace(/\s/g, "");
   //  console.log(s);
   if (str.length === 0) {
     return 0;
   }
   for (var i = s.length; i >= 0; i--) {
-    if (s[i] == ' ') {
+    if (s[i] == " ") {
       console.log(s.length);
       console.log(i);
 
@@ -17,5 +17,6 @@ var lastWordLength = function (s) {
     }
     if (i === 0) return s.length;
   }
-}
+};
+
 console.log(lastWordLength("I am Ambika"));

@@ -1,5 +1,7 @@
 //time: o(n)
 //space: o(n)
+
+
 var plusOne = function (digits) {
   var ans = []
     , add = 0
@@ -20,7 +22,7 @@ var plusOne = function (digits) {
 
   return ans;
 };
-console.log(plusOne([3, 9]));
+console.log(plusOne([9, 9]));
 
 // var plusOne = function (digits) {
 //   digits = digits.join('');

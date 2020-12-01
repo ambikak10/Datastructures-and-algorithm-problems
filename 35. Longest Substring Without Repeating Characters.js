@@ -3,6 +3,10 @@
 var lengthOfLongestSubstring = function (s) {
   var i;
   var n = s.length;
+  //console.log(n);
+  if(n===0){
+    return 0;
+  }
   var st = 0;
   var currlen;
   var maxlen = 0;
@@ -13,9 +17,12 @@ var lengthOfLongestSubstring = function (s) {
 
   for (i = 1; i < n; i++) {
   
-    if (!s[i] in pos){
-        pos[s[i]] = i;
-    } else {
+    if (s[i] in pos){
+      // If this character is present in hash then
+      // this character has previous occurrence,
+      // check if that occurrence is before or after
+      // starting point of current substring.
+      console.log(pos);
       if (pos[s[i]] >= st) {
         currlen = i - st;
         if (maxlen < currlen) {
@@ -31,7 +38,9 @@ var lengthOfLongestSubstring = function (s) {
       // Update last occurrence of
       // current character.
       pos[s[i]] = i;
-    }
+    } else {
+      pos[s[i]] = i;
+    } 
   }
 
   // Compare length of last substring with maxlen and
@@ -40,7 +49,7 @@ var lengthOfLongestSubstring = function (s) {
     // console.log(i, st);
     maxlen = i - st;
     //start = st;
-    console.log(maxlen);
+    //console.log(maxlen);
   }
 
   // The required longest substring without
@@ -51,6 +60,7 @@ var lengthOfLongestSubstring = function (s) {
   return maxlen;
 
 };
-
-console.log(lengthOfLongestSubstring("prasadyaji"));
-console.log(lengthOfLongestSubstring("abcbbad"));
+// console.log(lengthOfLongestSubstring("au"));
+console.log(lengthOfLongestSubstring("bamikaxyzbo"));
+//console.log(lengthOfLongestSubstring("prasadyaji"));
+//console.log(lengthOfLongestSubstring("abcbbad"));

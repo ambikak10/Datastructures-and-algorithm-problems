@@ -1,20 +1,20 @@
-var permutation = function (a, b) {
+var permutation = function (s, t) {
   // console.log(a.length)
   var dictionary = {};
-  if (a.length === b.length) {
-    for (var i = 0; i < a.length; i++) {
-      if (a[i] in dictionary) {
-        dictionary[a[i]]++;
+  if (s.length === t.length) {
+    for (var i = 0; i < s.length; i++) {
+      if (s[i] in dictionary) {
+        dictionary[s[i]]++;
       } else {
-        dictionary[a[i]] = 1;
+        dictionary[s[i]] = 1;
       }
     }
-    for (var i = 0; i < b.length; i++) {
-      if (b[i] in dictionary) {
-        if (dictionary[b[i]] > 1) {
-          dictionary[b[i]]--;
+    for (var i = 0; i < t.length; i++) {
+      if (t[i] in dictionary) {
+        if (dictionary[t[i]] > 1) {
+          dictionary[t[i]]--;
         } else {
-          delete dictionary[b[i]];
+          delete dictionary[t[i]];
         }
       } else {
         return false;
@@ -29,5 +29,5 @@ var permutation = function (a, b) {
     return false;
   }
 };
-// console.log(permutation('cat', 'asd'));
+console.log(permutation('cat', 'act'));
 // o(2n)

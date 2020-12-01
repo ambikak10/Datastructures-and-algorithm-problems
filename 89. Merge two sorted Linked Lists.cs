@@ -33,16 +33,13 @@ class GfG
   // or equal to h2's data. 
   static Node mergeUtil(Node h1, Node h2)
   {
-    // if only one node in first list 
-    // simply point its head to second list 
+   
     if (h1.next == null)
     {
       h1.next = h2;
       return h1;
     }
 
-    // Initialize current and next pointers of 
-    // both lists 
     Node curr1 = h1, next1 = h1.next;
     Node curr2 = h2, next2 = h2.next;
 

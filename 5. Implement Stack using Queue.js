@@ -22,10 +22,10 @@ class stackUsingQueue {
   constructor() {
     this.q1 = new Queue();
     this.q2 = new Queue();
-    var curr_size = 0;
+    //var curr_size = 0;
   }
   push(x) {
-    this.curr_size += 1;
+    //this.curr_size += 1;
     this.q2.enqueue(x);
     console.log(x);
     while (!this.q1.isEmpty()) {

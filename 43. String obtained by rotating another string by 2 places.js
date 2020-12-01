@@ -1,10 +1,9 @@
 var rotateString =  function(A, B){
  if(A.length !== B.length)
   return false;
-
 // anticlockwise
  var x = B.substring(B.length - 2, B.length) + B.substring(0, B.length - 2);
- console.log(x);
+//  console.log(x);
  if(A === x){
    return true;
  } 
@@ -14,4 +13,6 @@ var rotateString =  function(A, B){
   return true;
 return false;
 }
-rotateString("amazon", "azonam");
+console.log(rotateString("abcdefg", "cdefgab"));
+//o(n)?
+//o(n) space?

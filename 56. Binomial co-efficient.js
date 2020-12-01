@@ -1,4 +1,5 @@
 // Binomial co-effiecient using recursion
+//pascal's triangle
 
 var bCk = function(n, k){
    if( k === 0 || k === n){
@@ -10,13 +11,13 @@ var bCk = function(n, k){
 console.log(bCk(4, 2));
 
 // Dynamic Programming
-// O(n * k)
-// o(k)
+// Time Complexity: O(n*k) 
+// Auxiliary Space: O(n*k)
 
 var binomialCoeff = function(n, k){
    var C=[];
    for (i = 0; i <= n; i++) C.push([1]);
-// console.log(C);
+ console.log(C);
    for(var i=0; i<= n; i++){
 
      for(j=0; j<= Math.min(i, k); j++){

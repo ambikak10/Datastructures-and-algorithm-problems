@@ -1,4 +1,6 @@
 //Dynamic programming
+// o(m*n)??
+// o(m*n)
 function LCS(text1, text2) {
   var m = text1.length,
     n = text2.length,
@@ -29,7 +31,6 @@ function LCS(text1, text2) {
   //             ? bt(i, j-1)
   //             : bt(i-1, j);
   // }(m, n));
-
   var lcs = "";
   i = m, 
   j = n;
@@ -47,6 +48,7 @@ function LCS(text1, text2) {
     else if (C[i - 1][j] > C[i][j - 1]) i--;
     else j--;
   }
+  console.log(lcs)
   return lcs.length;
 }
 console.log(LCS("zxabcdezy", "yzabcdezx"));

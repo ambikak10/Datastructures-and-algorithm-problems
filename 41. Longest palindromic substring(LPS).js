@@ -6,6 +6,7 @@ var longestPalindrome = function (s) {
   var low = 0;
   var high = 0;
 
+  
   for (var i = 1; i < length; i++) {
     low = i-1;
     high = i;

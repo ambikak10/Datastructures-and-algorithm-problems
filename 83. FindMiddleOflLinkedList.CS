@@ -35,6 +35,7 @@ class GFG
 
         }
     }
+    
         // Rolling back, decrement n by one  
        public void push(Node head_ref, int new_data)
         {

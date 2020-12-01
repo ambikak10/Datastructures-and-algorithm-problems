@@ -1,4 +1,4 @@
-// o(n)
+//o(n)
 //SINGLY LINKED
 class Node {
   constructor(value) {
@@ -30,6 +30,7 @@ class LinkedList {
   // Reverse a linked list
   reversedList() {
     if (this.head === null || this.head.next === null) {
+      console.log("Hello")
       return this.head;
     }
     var prev = null;
@@ -41,14 +42,15 @@ class LinkedList {
       prev = current;
     }
     this.head = prev;
+    //console.log(this)
     return this;
   }
 }
 
 var list = new LinkedList();
-// list.push(2);
-// list.push(4);
-// list.push(6);
-// list.push(8);
-// console.log(list);
-// console.log(list.reversedList());
+//list.push(null);
+list.push(4);
+list.push(6);
+list.push(8);
+//console.log(list);
+console.log(list.reversedList());

@@ -7,7 +7,7 @@ var minPathSum = function (grid) {
   for (var i = 0; i < n; i++) {
     ans[i] = [];
   }
-  console.log(ans);
+  //console.log(ans);
 
   for (var i = 0; i < n; i++)
     for (var j = 0; j < m; j++) {
@@ -15,7 +15,7 @@ var minPathSum = function (grid) {
       else if (i === 0) ans[i][j] = ans[i][j - 1] + grid[i][j];
       else if (j === 0) ans[i][j] = ans[i - 1][j] + grid[i][j];
       else ans[i][j] = grid[i][j] + Math.min(ans[i][j - 1], ans[i - 1][j]);
-      console.log(ans[i][j]);
+      //console.log(ans[i][j]);
     }
 
   return ans[n - 1][m - 1];

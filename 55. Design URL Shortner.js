@@ -3,6 +3,7 @@ var idToShortURL = function (id) {
   map = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   shortURL = "";
 
+
   while (id > 0) {
     shortURL = map[id % 62] + shortURL;
     id = Math.floor(id / 62);
@@ -14,7 +15,7 @@ var idToShortURL = function (id) {
     //console.log(val_i);
     if (val_i >= "a".charCodeAt(0) && val_i <= "z".charCodeAt(0)) {
       id = id * 62 + val_i - "a".charCodeAt(0);
-      // console.log(id);
+       console.log(id);
     } else if (val_i >= "A".charCodeAt(0) && val_i <= "Z".charCodeAt(0)) {
       console.log(id)
       id = id * 62 + val_i - "A".charCodeAt(0) + 26;

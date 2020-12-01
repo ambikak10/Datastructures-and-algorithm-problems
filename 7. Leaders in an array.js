@@ -12,4 +12,5 @@ var leaders = function (arr) {
   }
   // return a;
 };
+
 // leaders([16, 17, 4, 3, 5, 2]);

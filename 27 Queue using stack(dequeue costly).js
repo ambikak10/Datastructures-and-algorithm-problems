@@ -26,7 +26,6 @@ class Queue {
     }
   }
 }
-
 // var q = new Queue();
 // q.enQueue(1)
 // q.enQueue(2)

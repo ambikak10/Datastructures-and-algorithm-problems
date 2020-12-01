@@ -1,7 +1,8 @@
 var permutation = function (a, b) {
-  a = a.split().sort().join();
-  b = b.split().sort().join();
-  console.log(a);
+  a = a.split('').sort().join();
+    console.log(a)
+  b = b.split('').sort().join();
+    console.log(b);
 
   if (a === b) {
     return true;
@@ -10,6 +11,6 @@ var permutation = function (a, b) {
   }
 };
 
-// console.log(permutation('act', 'cat'))
+ console.log(permutation('act', 'cat'))
 
 // 2 * O(Nlogn) or something

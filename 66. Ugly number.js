@@ -1,5 +1,4 @@
 // Ugly numbers are positive numbers whose prime factors only include 2, 3, 5.
-
 // Time : o(n)
 // space: o(1)?
 var isUgly = function (num) {

@@ -8,6 +8,6 @@ var maxSum = function (nums) {
   });
   return maxn;
 };
-// console.log(maxSum([-2, -3, 4, -1, -2, 1, 5, -3]))
+ console.log(maxSum([-2, -3, 4, -1, -2, 1, 5, -3]))
 
 // Time complexity : O(n)

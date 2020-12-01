@@ -30,4 +30,5 @@ var frequency = function (a) {
   }
   return arr;
 };
+
 console.log(frequency([2, 5, 2, 8, 5, 6, 8, 8]));

@@ -1,6 +1,6 @@
 var kmp = function(pattern){
     var m = pattern.length;
-    f=[];
+    var f=[];
     f[0] = 0;
 
     var i = 1;
@@ -20,7 +20,6 @@ var kmp = function(pattern){
     }
     return f;
 }
-
 var ststr = function(text, pattern) {
     f = kmp(pattern);
 

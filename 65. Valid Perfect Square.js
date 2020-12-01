@@ -22,6 +22,6 @@ var isPerfectSquare = function (num) {
 };
 console.log(isPerfectSquare(14));
 
-console.log(8>>1)
+console.log(5>>1)
 
-//right shift gives mid number
+//right shift by 1 gives mid number

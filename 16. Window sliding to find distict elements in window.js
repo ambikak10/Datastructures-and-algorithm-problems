@@ -11,10 +11,11 @@ var windowSliding = function (a, k) {
     } else {
       window[a[i]] = 1;
       count++;
+      //console.log(count);
     }
   }
   arr.push(count);
-  // console.log(arr);
+  //console.log(arr);
   console.log(window);
 
   for (i = k; i < a.length; i++) {

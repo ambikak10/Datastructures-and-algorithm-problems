@@ -15,7 +15,6 @@ var equilibriumIndex = function (nums) {
   /* If no equilibrium index found, then return 0 */
   return -1;
 };
-
 // console.log(equilibriumIndex([ -7, 1, 5, 2, -4, 3, 0]));
 //O(2n)
 

@@ -1,33 +1,31 @@
-
-// var placeQueens = function(row, columns){
+// var placeQueens = function(row, arr){
 //   if(row === GRID_SIZE){
-//   console.log(columns);
+//   console.log(arr);
 //   } else {
 //     for(var col=0; col< GRID_SIZE; col++){
-//       if (checkValid(row, col, columns)){
-//         columns[row] = col;
-//         placeQueens(row+1, columns);
+//       if (checkValid(row, col, arr)){
+//         arr[row] = col;
+//         placeQueens(row+1, arr);
 //       }
 //     }
 //   }
-//   return columns;
+//   return arr;
 // }
 
-var placeQueens = function (row, columns) {
+var placeQueens = function (row, arr) {
   for (var col = 0; col < GRID_SIZE; col++) {
-    if (checkValid(row, col, columns)) {
-      columns[row] = col;
+    if (checkValid(row, col, arr)) {
+      arr[row] = col;
       if (row < GRID_SIZE-1)
-        placeQueens(row + 1, columns);
+        placeQueens(row + 1, arr);
       else
-        console.log(columns);
+        console.log(arr);
     }
   }
 };
-
-var checkValid = function(row1, col1, columns){
+var checkValid = function(row1, col1, arr){
   for(var row2 = 0; row2 < row1 ; row2++){
-    var col2 = columns[row2];
+    var col2 = arr[row2];
     if(col1 == col2){
       return false;
     }

@@ -12,10 +12,11 @@ var isPrime =function(num) {
   // Loop's ending condition is i * i <= num instead of i <= sqrt(num)
   // to avoid repeatedly calling an expensive function sqrt().
   for (var i = 2; i * i <= num; i++) {
-    console.log(i*i)
+    // console.log(i*i)
     if (num % i == 0) return false;
   }
   return true;
 }
 console.log(countPrimes(8));
 
+//Factors of a number is always less than or equal to the sqrt of that number

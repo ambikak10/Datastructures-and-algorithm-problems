@@ -15,9 +15,9 @@ var subarraySumNegative = function (nums, sum) {
     }
     key = curr_sum - sum;
     if (key in map) {
-      start = map[curr_sum - sum] + 1;
+      start = map[key] + 1;
       end = i;
-      break;
+      //break;
     }
     map[curr_sum] = i;
   }
@@ -25,8 +25,9 @@ var subarraySumNegative = function (nums, sum) {
   if (end === -1) {
     console.log("No subarray found");
   } else {
-    console.log("SUB array found between indexes " + start, end);
+    console.log("Subarray found between indexes " + start, end);
   }
 };
-// subarraySumNegative([10, 3, -2, -20, 10], -10)
+ subarraySumNegative([10, 3, -2, -20, 10], -10)
+//subarraySumNegative([10, 50, 50], 60)
 // o(n)

@@ -8,7 +8,6 @@ class Stack {
   }
 
   push(x) {
-    
     if (this.item.length === 0) {
       this.item.push(x);
       this.min = x;

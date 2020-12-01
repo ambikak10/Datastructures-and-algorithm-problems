@@ -31,4 +31,5 @@ var mergeSort = function(arr){
   }
  return arr;
 }
+
 console.log(mergeSort([38, 27, 43, 3, 9, 82, 10]));

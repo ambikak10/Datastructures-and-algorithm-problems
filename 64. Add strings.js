@@ -7,19 +7,26 @@ var addStrings = function (num1, num2) {
 
   i -= 1, j -= 1;
   for ( ; i >= 0 || j >= 0; i--, j--) {
-    let a = i >= 0 ? num1[i] : 0;
-    console.log(a);
+    let a = i >= 0 ? num1[i] : 0; //if num1 and num2 are of diff length, then 
+    // 2 2 3 9
+    // x 1 0 3 
+    //------------
+    // 202130930
+    //------------
+    //in the place of x, take 0
+    //console.log(a);
     let b = j >= 0 ? num2[j] : 0;
-    console.log(b);
+    //console.log(b);
     let sum = a + b + add;
+    //console.log(sum);
     ans = sum % 10 + ans;
     add = ~~(sum / 10);
   }
 
-  (ans = add + ans);
+  ans = add + ans;
   return ans;
 };
-console.log(addStrings('239', '103'));
+console.log(addStrings('2239', '103'));
 
 
 // var v = 2 && 3

@@ -13,7 +13,6 @@
 
 console.log(move0s([0, 1, 0, 3, 12]));
 
-
 var moveZeroes = function(nums){
   var n = nums.length;
   if(n===0 || n===1) {

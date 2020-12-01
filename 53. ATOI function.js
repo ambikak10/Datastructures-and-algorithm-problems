@@ -1,5 +1,6 @@
 // o(n)
 //o(1)
+
 var myAtoi = function (str) {
   var sign = 1,
     base = 0,
@@ -11,7 +12,7 @@ var myAtoi = function (str) {
   // sign of number
   if (str[i] == "-" || str[i] == "+") {
     // console.log(str[i++] == "-");
-    sign = 1 - 2 * (str[i++] == "-");
+    sign = 1 - 2 * (str[i++] == "-"); //(str[i++] == "-") returns true or false, true means 1
   }
   // checking for valid input
   while (str[i] >= "0" && str[i] <= "9") {
@@ -19,7 +20,7 @@ var myAtoi = function (str) {
 
     if (
       base > Math.floor(2147483647 / 10) ||
-      (base === Math.floor(2147483647 / 10) && str[i] - "0" > 7)
+      (base === Math.floor(2147483647 / 10) && str[i] - "0" > 7) //str[i] - "0" gives ascii value
     ) {
       if (sign == 1) return 2147483647;
       else return -2147483648;

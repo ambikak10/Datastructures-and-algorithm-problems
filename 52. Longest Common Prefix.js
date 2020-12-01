@@ -28,6 +28,7 @@ var longestCommonPrefix = function (strs) {
   }
   return lcp;
 }
+
 console.log(longestCommonPrefix(["flower", "flow", "flood"]));
 // O(n * m)
 

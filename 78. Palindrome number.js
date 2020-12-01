@@ -4,7 +4,8 @@ var reverse = function (x) {
   var max = (1 << 30) * 2 - 1;
 
   var rev;
-  var arr = x.toString(2).split('');
+  var arr = x.split('');
+  console.log(arr);
   console.log(typeof (x));
   if (x < 0)
     arr.shift();

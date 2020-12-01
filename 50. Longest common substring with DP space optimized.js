@@ -19,7 +19,6 @@ var LCSubStr = function(X, Y)
   // For a particular value of i and j,
   // len[currRow][j] stores length of longest
   // common substring in string X[0..i] and Y[0..j].
-
   for (var i = 0; i <= m; i++) {
     for (var j = 0; j <= n; j++) {
       if (i == 0 || j == 0) {

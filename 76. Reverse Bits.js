@@ -1,6 +1,7 @@
 //Palindrome/Reverse number
 var reverse = function (x) {
   var min = -(1 << 30) * 2;
+  console.log(min)
   var max = (1 << 30) * 2 - 1;
   var rev;
   var arr = x.toString(2).split('');
@@ -30,6 +31,7 @@ for (var i = 1; i <= 32; i++)
 
 var reverseBits = function (n) {
   var tmp = n.toString(2);
+  console.log(tmp)
   for (var i = tmp.length; i <= 31; i++)
     tmp = '0' + tmp;
   var ans = 0;
@@ -39,3 +41,4 @@ var reverseBits = function (n) {
   }
   return ans;
 };
+console.log(reverseBits(7));

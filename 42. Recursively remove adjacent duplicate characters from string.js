@@ -56,7 +56,6 @@ removeAdjacentdoubles = function (string, last_removed) {
 // console.log(removeAdjacentdoubles("abbdc", 0));
 
 // console.log(removeAdjacentdoubles("qpaaaaadaaaaadprq", 0));
-
 var removeDuplicates = function (S) {
   let j = 1, prev = '';
   let newString = "";
