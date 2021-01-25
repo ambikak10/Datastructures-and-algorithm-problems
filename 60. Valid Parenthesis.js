@@ -14,5 +14,4 @@ var isValid = function (s) {
   }
   return !sta.length;
 };
-
 console.log(isValid("()[{}"));

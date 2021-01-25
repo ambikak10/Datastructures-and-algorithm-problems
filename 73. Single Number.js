@@ -6,7 +6,6 @@ var singleNumber = function (nums) {
   }
   return ans;
 };
-
 console.log(singleNumber([4, 1, 2, 1, 2]));
 //o(n)
 //o(1)

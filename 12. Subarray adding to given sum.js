@@ -23,7 +23,7 @@
 //   }
 //   return console.log("No subarray found");
 // };
-// console.log(subarrayGivenSum([1, 4, 20, 3, 10, 5], 33))
+// console.log(subarrayGivenSum([34, 1, 4, 20, 3, 10, 5], 33))
 
 //Time Complexity = O(n)
 
@@ -38,6 +38,13 @@ var subarrayGivSum = function (arr, sum) {
       curr_sum = curr_sum - arr[start];
       start = start + 1;
     }
+
+    if(curr_sum > sum)
+    {
+      curr_sum = curr_sum - arr[start];
+      start = start + 1;
+    }
+
     if (curr_sum === sum) {
       //console.log(i);
       console.log("Found btw indexes", start, i - 1);
@@ -71,4 +78,4 @@ var subarrayGivSum = function (arr, sum) {
   // return true;
 };
 //console.log(subarrayGivenSum([1, 4, 20, 3, 10, 5], 33));
- console.log(subarrayGivSum([1, 4, 20, 3, 10, 5,12,13,14], 33));
+ console.log(subarrayGivSum([1, 34, 4, 20, 3, 10, 5,12,13,14], 33));

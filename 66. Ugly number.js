@@ -15,5 +15,24 @@ var isUgly = function (num) {
 };
 console.log(isUgly(68));
 
+
 // if number is factors of 2^3, 3^4, 5^1, then, complexity is 3+4+1
 // while loop executes 8 times
+
+var reverse = function (x) {
+  var reversed = 0;
+  var z =  x;
+ while (x != 0) {
+    reversed = reversed * 10;
+    reversed = reversed + x % 10;
+    x = x - x % 10;
+    x = x / 10;
+    //console.log(reversed)
+  }
+  // return reversed;
+  if (z == reversed) {
+    return true;
+  }
+  else return false;
+}
+console.log(reverse(203));

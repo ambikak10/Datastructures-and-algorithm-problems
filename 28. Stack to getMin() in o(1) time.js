@@ -7,7 +7,7 @@ class Stack {
     // this.getMin = this.getMin.bind(this);
   }
 
-  push(x) {
+  push =(x)=> {
     if (this.item.length === 0) {
       this.item.push(x);
       this.min = x;

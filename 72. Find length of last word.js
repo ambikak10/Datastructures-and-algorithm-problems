@@ -8,7 +8,7 @@ var lastWordLength = function (s) {
   if (str.length === 0) {
     return 0;
   }
-  for (var i = s.length; i >= 0; i--) {
+  for (var i = s.length-1; i >= 0; i--) {
     if (s[i] == " ") {
       console.log(s.length);
       console.log(i);
@@ -18,5 +18,6 @@ var lastWordLength = function (s) {
     if (i === 0) return s.length;
   }
 };
-
 console.log(lastWordLength("I am Ambika"));
+console.log(lastWordLength("Hello World"));
+

@@ -15,7 +15,18 @@ function findDuplicate(nums){
 // const myName = 'Sunil';
 
 // console.log("2a", myName2); // error: myName2 is not defined
-if (1) {
-  console.log("2b", myName2); // undefined
-  let myName2 = "Sunil";
-}
+// if (1) {
+//   console.log("2b", myName2); // undefined
+//   let myName2 = "Sunil";
+// }
+
+var i = 2;
+console.log(i++)
+console.log(i)
+console.log(++i)
+console.log(i)
+
+
+
+console.log(myName);
+let myName = 'Sunil';

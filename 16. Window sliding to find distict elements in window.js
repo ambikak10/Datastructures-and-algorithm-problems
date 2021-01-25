@@ -1,5 +1,4 @@
 // O(n)
-
 var windowSliding = function (a, k) {
   var window = {};
   var count = 0;

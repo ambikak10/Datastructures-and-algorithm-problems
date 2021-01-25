@@ -76,4 +76,5 @@ var nge = function (nums) {
   }
   return s;
 };
+
 console.log(nge([1, 2, 3]));

@@ -14,3 +14,35 @@ var missingInteger = function (arr) {
 };
 // console.log(missingInteger([1, 3, 4, 5]))
 //  Time Complexity = o(n)
+
+// setTimeout(function () {
+//   console.log(2);
+// }, 3000);
+// for (var i = 1; i < 10; i++) {
+//   // takes 10 seconds
+//   console.log(i);
+// }
+
+
+for (var i = 1; i < 10; i++) {
+  setTimeout(function () {
+    console.log(i);
+  });
+}
+
+
+var length = 10;
+function fn() {
+  console.log(this)
+	console.log(this.length);
+}
+
+var obj = {
+  length: 5,
+  method: function(fn) {
+    fn();
+    arguments[0]();
+  }
+};
+
+obj.method(fn, 1);

@@ -28,6 +28,7 @@ var subarraySumNegative = function (nums, sum) {
     console.log("Subarray found between indexes " + start, end);
   }
 };
+
  subarraySumNegative([10, 3, -2, -20, 10], -10)
 //subarraySumNegative([10, 50, 50], 60)
 // o(n)

@@ -47,7 +47,8 @@ var sort = function(ar){
 
   while (cnt0 > 0) {
  
-    ar[i++] = 0;
+    ar[i] = 0;
+    i++;
        console.log(i);
     cnt0--;
   }

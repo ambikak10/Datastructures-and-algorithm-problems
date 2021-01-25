@@ -10,7 +10,7 @@ var removeDuplicates = function (nums) {
       ans++;
 
   }
-  return ans;
+  return nums;
 };
 console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
 // Time: o(n)

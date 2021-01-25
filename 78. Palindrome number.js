@@ -140,4 +140,5 @@ isPalindrome = (string) => {
   return false;
 };
 
-
+x='456'
+console.log(x.split('').join(''))

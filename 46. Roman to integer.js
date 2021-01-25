@@ -24,6 +24,7 @@ var romanToInt = function(s) {
      }
        return sum;
 };
+
 console.log(romanToInt("MCMIV"));
 //o(n)
 //o(1): No extra space required

@@ -1,4 +1,5 @@
 var permutation = function (s, t) {
+
   // console.log(a.length)
   var dictionary = {};
   if (s.length === t.length) {
@@ -29,5 +30,6 @@ var permutation = function (s, t) {
     return false;
   }
 };
+
 console.log(permutation('cat', 'act'));
 // o(2n)
